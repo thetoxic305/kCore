@@ -1,0 +1,72 @@
+# ---------------------------------
+# ▎ kCore Message Configuration   ▎
+# ---------------------------------
+
+# Rank-related messages
+rank:
+  usage:
+    create: "&cUsage: /rank create <name>"
+    delete: "&cUsage: /rank delete <rank>"
+    edit: "&cUsage: /rank edit <rank>"
+  exists: "&cA rank with name {name} already exists."
+  created: "&eCreated rank {name}&e."
+  deleted: "&eDeleted rank {name}&e."
+  cannot.delete.default: "&cThe default rank cannot be deleted."
+  not.found: "&cNo rank with name {name} found."
+  not_found: "&cNo rank with name {name} found."
+  remove:
+    inherit: "&c{name} does not inherit {inherit}."
+    permission: "&c{name} does not have permission {permission}."
+  removed:
+    inherit: "&cRemoved &eyellow&f inherit &c{inherit} from rank {name}."
+    permission: "&cRemoved &eyellow&f permission &c{permission} from rank {name}."
+  not.exist: "&cThe rank {rank} does not exist."
+  name.exists: "&cThere is already a rank with this name"
+  cannot.inherit.itself: "&cA rank cannot inherit itself."
+  already.inherits: "&cRank {rank} already inherits from {inherit}."
+  added.inherit: "&eAdded {inherit} as an inherit of rank {rank}."
+  already.has.permission: "&cRank {rank} already has the permission {permission}."
+  added.permission: "&eAdded permission {permission} to rank {rank}."
+  set.name: "&eChanged rank name from {oldName} to {newName}."
+  invalid.priority: "&cInvalid priority value."
+  set.priority: "&eSet priority of rank {rank} to {priority}."
+  already.has.prefix: "&cRank {rank} already has the prefix {prefix}."
+  set.prefix: "&eSet prefix of rank {rank} to {prefix}."
+  already.has.suffix: "&cRank {rank} already has the suffix {suffix}."
+  set.suffix: "&eSet suffix of rank {rank} to {suffix}."
+  permission.add.remove.not.specified: "&cYou must specify 'add' or 'remove' for permissions."
+  enter.permission: "&eEnter the permission to add to rank {rank}."
+  no.permissions: "&cRank {rank} has no permissions."
+  permissions.header: "&ePermissions for {rank}:"
+  chat.line: "&7&m------------------------------"
+  inherit.add.remove.not.specified: "&cYou must specify 'add' or 'remove' for inherits."
+  enter.inherit: "&eEnter the rank to inherit for rank {rank}."
+  no.inherits: "&cRank {rank} has no inherits."
+  inherits.header: "&eInherits for {rank}:"
+
+# Server status messages
+status:
+  server.not.found: "&cNo server with name {server} found."
+  header: "&6{server}"
+  status: "&eStatus&7: &f{status}"
+  online.players: "&eOnline Players&7: &f{online}/{max}"
+  tps: "&eTPS (5s, 1m, 5m, 15m)&7: &f{tps}"
+
+# Chat moderation messages
+chat:
+  cleared: "&eChat has been &6cleared &eby &f{executor}&e."
+  slowchat.no.delay: "&cYou must specify a delay as chat is not slowed."
+  slowchat.unslowed: "&eChat has been &aun-slowed &eby &f{executor}&e."
+  slowchat.slowed: "&eChat has been &cslowed &eby &f{executor} &ewith a cooldown of &f{cooldown}&e."
+  invalid.cooldown: "&cInvalid cooldown provided."
+  muted: "&eChat has been &cmuted &eby &f{executor}&e."
+  unmuted: "&eChat has been &aun-muted &eby &f{executor}&e."
+
+# Alt account messages
+alts:
+  no-alts: "&c{player} does not have any known alts."
+  title: "&eAlts of {player}:"
+
+# Command spy messages
+cmdspy:
+  prefix: '&9[CMDSpy] &f{coloredName} &fhas ran &b<command> &fat &b%time%'

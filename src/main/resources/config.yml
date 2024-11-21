@@ -1,0 +1,68 @@
+# /$$        /$$$$$$
+#| $$       /$$__  $$
+#| $$   /$$| $$  \__/  /$$$$$$   /$$$$$$   /$$$$$$
+#| $$  /$$/| $$       /$$__  $$ /$$__  $$ /$$__  $$
+#| $$$$$$/ | $$      | $$  \ $$| $$  \__/| $$$$$$$$
+#| $$_  $$ | $$    $$| $$  | $$| $$      | $$_____/
+#| $$ \  $$|  $$$$$$/|  $$$$$$/| $$      |  $$$$$$$
+#|__/  \__/ \______/  \______/ |__/       \_______/
+# Krypton Core
+
+serverName: "your network"
+
+mongo:
+  host: "localhost"
+  port: 27017
+  authentication:
+    enabled: false
+    database: "admin"
+    username: ""
+    password: ""
+
+redis:
+  host: "localhost"
+  port: 6379
+  authentication:
+    enabled: false
+    password: ""
+
+joinMessage:
+  - "%chatLine%"
+  - "&fWelcome to &bExample Network&f Season &b1!"
+  - ""
+  - "&7%indent%&bStore&7: &fstore.example.com"
+  - "&7%indent%&bDiscord&7: &fdiscord.example.com"
+  - "&7%indent%&bTwitter&7: &ftwitter.com/@example"
+  - "%chatLine%"
+
+spawn:
+  join: false
+  location:
+    world: "world"
+    x: 0.5
+    y: 64
+    z: 0.5
+    yaw: 180
+    pitch: 180
+
+blacklistedWords: # Follow the format to create your own filtered words
+  - "nigger"
+  - "negro"
+  - "negroid"
+  - "nignog"
+  - "neeger"
+  - "faggot"
+  - "fag"
+  - "dyke"
+  - "jew"
+  - "kys"
+  - "coon"
+
+player:
+  setTablistName: false
+
+# For lobbies so users can still register for Discord.
+punishment:
+  disallow-ban-join: true
+
+warps: { } # /setswarp <warp>
