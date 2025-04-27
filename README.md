@@ -29,6 +29,3 @@ kCore is an all in one network core which is extremely performance optimized wit
  -**Request** **System**: Request assistance from staff.
 - **Status**: View your server's status.
 - **Proxy** **Support**: Cross-server support (messages, punishments, broadcasts, etc.)
-
-# Credits
-Vifez & Curtis
